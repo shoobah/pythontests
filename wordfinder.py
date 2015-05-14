@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """Retrieve and print words from a URL.
 
 Usage:
@@ -8,7 +9,7 @@ import sys
 from urllib.request import urlopen
 
 
-def fetch_words():
+def fetch_words(url):
     """Fetch a list of words from a URL.
 
     Args:
@@ -44,8 +45,8 @@ def main(url):
         url: The URL of a UTF-8 text document.
     """
     words = fetch_words(url)
-    print_items()
+    print_items(words)
 
 
 if __name__ == '__main__':
-    main(sys.argv[1])
+    main(sys.argv[1]) # The 0th argument is the module name
