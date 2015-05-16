@@ -28,7 +28,7 @@ def main():
     except (ZeroDivisionError, ValueError) as e:
         print(e, file=sys.stderr)
 
-    print('Program excecution contnues normally here.')
+    print('Program execution continues normally here.')
 
 if __name__ == '__main__':
     main()
